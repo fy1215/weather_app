@@ -1,16 +1,30 @@
-# React + Vite
+# 天気アプリ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Reactで作成した天気検索アプリです。都市名を入力すると、その都市の現在の天気を表示します。
 
-Currently, two official plugins are available:
+## 機能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 都市名で天気を検索
+- 気温、天気の状態を表示
+- 存在しない都市はエラーメッセージを表示
 
-## React Compiler
+## 使用技術
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18
+- JavaScript
+- Vite
+- Tailwind CSS
+- OpenWeatherMap API
 
-## Expanding the ESLint configuration
+## 学んだこと
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- useEffect（副作用の処理）
+- API通信（fetch、async/await）
+- ファイル分割（components）
+- Tailwind CSS（ユーティリティクラス）
+- 条件付きレンダリング（&&、三項演算子）
+
+## 注意
+
+APIキーは自分で取得してください。
+https://openweathermap.org/
